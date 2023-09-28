@@ -33,6 +33,9 @@ public class Reports_SalesReport {
 	@FindBy(xpath = "//li[normalize-space()='Custom Range']")
 	private WebElement custom;
 
+	@FindBy(xpath = "//label[@for='selectAllTimeFrames']")
+	private WebElement selectalltf;
+
 	@FindBy(xpath = "//div[@class='ms-selectable']//input[@type='text']")
 	private WebElement searchselectabledishes;
 
@@ -86,6 +89,10 @@ public class Reports_SalesReport {
 
 	public WebElement getCustom() {
 		return custom;
+	}
+
+	public WebElement getSelectalltf() {
+		return selectalltf;
 	}
 
 	public WebElement getSearchselectabledishes() {

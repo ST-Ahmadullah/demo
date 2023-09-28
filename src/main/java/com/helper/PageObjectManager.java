@@ -103,7 +103,7 @@ public class PageObjectManager {
 		}
 		return csl;
 	}
-
+	
 	private Users_GuestList ugl;
 
 	public Users_GuestList getInstanceugl() {
@@ -169,7 +169,7 @@ public class PageObjectManager {
 
 	private Reports_GstReport gr;
 
-	public Reports_GstReport getInstancegr() {
+	public Reports_GstReport getInstancecgr() {
 		if (gr == null) {
 			gr = new Reports_GstReport(driver);
 		}
@@ -220,5 +220,7 @@ public class PageObjectManager {
 		}
 		return lo;
 	}
+	
+	
 
 }
